@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Game>
+<Start></Start>
+<Init>
+    <WarShip>
+        <Properties>
+            <MoveCommand>
+                <Include>
+                    <ConditionCommand>
+                        <If>
+                            <Command>
+                                CheckFuel
+                            </Command>
+                        </If>
+                        <Then>
+                            <Command>
+                                BurnFuel
+                            </Command>
+                            <Command>
+                                Move
+                            </Command>
+                        </Then>
+                    </ConditionCommand>   
+                </Include>
+            </MoveCommand>
+            <ShootCommand>
+                <Include>
+                    <Command>
+                        Shoot
+                    </Command>
+                </Include>
+            </ShootCommand>            
+        </Properties>
+    </WarShip>
+    <Turret>
+        <Properties>
+            <ShootCommand>
+                <Include>
+                    <Command>
+                        Shoot
+                    </Command>
+                </Include>
+            </ShootCommand>
+            <RotateCommand>
+                <Include>
+                    <Command>
+                        Rotate
+                    </Command>
+                </Include>
+            </RotateCommand>
+        </Properties>
+    </Turret>
+</Init>
+<End></End>
+</Game>

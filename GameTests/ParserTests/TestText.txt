@@ -1,0 +1,1 @@
+Start Init WarShip Properties MoveCommand Include ConditionCommand If Command CheckFuel Then Command BurnFuel Command Move ShootCommand Include Command Shoot Turret Properties ShootCommand Include Command Shoot RotateCommand Include Command Rotate End 
